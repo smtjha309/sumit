@@ -1,0 +1,71 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+        <link rel="stylesheet" href="css/jquery.mobile.css" />
+        <style>
+            .list-item{
+                list-style-type: none;
+                /*height: 50px;*/
+            }
+            .list-item-inner {
+                margin-bottom: 10px;
+                border-bottom: 1px solid rgba(0,0,0,0.5);
+            }
+           
+
+        </style>
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/jquery.mobile.js"></script>
+        <script src="js/index.js"></script>
+
+    </head>
+    <body>
+
+
+
+        <div data-role="page" id="main_page">
+
+            <div data-role="header">
+                <h1>Main Page </h1>
+            </div><!-- /header -->
+
+            <div data-role="content">	
+
+                <a  href="#list" class="ui-btn ui-shadow ui-corner-all"  id="go_to_next">Show List</a>
+            </div><!-- /content -->
+
+            <div data-role="footer">
+                <h4>Demo Footer</h4>
+            </div>
+        </div>
+
+
+
+        <div data-role="page" id="list">
+
+            <div data-role="header">
+                <h1>List Header </h1>
+            </div><!-- /header -->
+
+            <div data-role="content">	
+                <a href="#main_page" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Back</a>
+                <div class="list-container">
+
+
+                </div>
+
+
+            </div><!-- /content -->
+            <div data-role="footer"> 
+                <h4>HI Footer</h4>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+    </body>
+</html>
